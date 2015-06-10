@@ -1,0 +1,50 @@
+.pure-menu-link, .pure-g, .pure-g [class *= "pure-u"]{
+    font-family: inherit;
+    color: inherit;
+}
+@media only screen and (max-width :480px){
+    .pure-form button[type=submit]{ margin:inherit; }
+    .pure-form input:not([type]),.pure-form input[type=text],.pure-form input[type=password],.pure-form input[type=email],.pure-form input[type=url],.pure-form input[type=date],.pure-form input[type=month],.pure-form input[type=time],.pure-form input[type=datetime],.pure-form input[type=datetime-local],.pure-form input[type=week],.pure-form input[type=number],.pure-form input[type=search],.pure-form input[type=tel],.pure-form input[type=color],.pure-form label{ margin-bottom: inherit; display: inline-block;}
+}
+.pure-menu-children{color: #333;}
+.pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus{background-color: inherit;}
+.pure-menu-children .pure-menu-link:hover, .pure-menu-children .pure-menu-link:focus{background-color: #ccc;}
+
+.pure-menu-hide-children>.pure-menu-link:after{
+    color: transparent;
+    margin-left: -.5em;
+    content: "\25B8";
+    font-size: small;
+}
+.pure-button{margin: .25em 0;}
+.pure-menu-link:hover{text-decoration: none;}
+/*.pure-menu-link{opacity: .75}*/
+/*.pure-menu-link:hover{text-decoration: underline;}*/
+/*.pure-menu-link{box-shadow: 0 0 1px #ccc inset;}*/
+
+
+
+
+
+.swiper-pagination-bullet {
+    box-shadow: 0 0 0 2px #fff;
+    opacity: 0.4;
+}
+.swiper-pagination-bullet-active{
+    opacity: 1;
+}
+.swiper-container {
+    width: 100%;
+    height: 300px;
+} 
+.swiper-slide{
+    background-size: cover;
+}
+.slide-1{background-image: url('slide/villa-irma-12f35e5b.jpg');}
+.slide-2{background-image: url('slide/villa-irma-13c83c0a.jpg');}
+.slide-3{background-image: url('slide/villa-irma-53d677c7.jpg');}
+.slide-4{background-image: url('slide/villa-irma-570fd2d8.jpg');}
+.slide-5{background-image: url('slide/villa-irma-6241f71a.jpg');}
+.slide-6{background-image: url('slide/villa-irma-8660d51d.jpg');}
+.slide-7{background-image: url('slide/villa-irma-9565485a.jpg');}
+.slide-8{background-image: url('slide/villa-irma-d776678d.jpg');}
