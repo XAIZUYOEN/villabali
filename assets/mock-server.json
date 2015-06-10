@@ -1,0 +1,62 @@
+res : {
+"currency" : [
+    {"iso": "AUD", "symbol": "$"},
+    {"iso": "RMB", "symbol": "¥"},
+    {"iso": "EUR", "symbol": "€"},
+    {"iso": "GBP", "symbol": "£"},
+    {"iso": "HKD", "symbol": "$"},
+    {"iso": "IDR", "symbol": "Rp"},
+    {"iso": "JPY", "symbol": "¥"},
+    {"iso": "KRW", "symbol": "₩"},
+    {"iso": "RUB", "symbol": "₽"},
+    {"iso": "SEK", "symbol": "kr"},
+    {"iso": "SGD", "symbol": "$"},
+    {"iso": "USD", "symbol": "$"}
+],
+
+
+"language" : [
+    "Deutsch",
+    "English",
+    "English (Australia)",
+    "English (Hong Kong)",
+    "English (Singapore)",
+    "Français",
+    "Bahasa Indonesia",
+    "Italiano",
+    "日本語",
+    "한국어",
+    "Nederlands",
+    "Английский",
+    "Svenska",
+    "简体中文"
+],
+
+"location" : [
+    "Seminyak",
+    "Canggu",
+    "Kuta, Legian &amp; surroundings",
+    "Ubud &amp; surroundings",
+    "Sanur &amp; Ketewel",
+    "Uluwatu, Nusa Dua &amp; Jimbaran",
+    "Lovina, Pemuteran &amp; the North",
+    "Amed, Candidasa &amp; the East",
+    "Tabanan, Balian &amp; the West",
+    "Gili, Lombok &amp; Nusa Lembongan",
+    "Umalas &amp; Kerobokan"
+],
+
+"villa" : [
+    "Villa Irma",
+    "Villa Arte",
+    "Villa Bewa",
+    "Villa Crystal",
+    "Villa Domus de Janas",
+    "Villa Exotic Stay",
+    "Villa Paya Paya",
+    "Villa Abakoi",
+    "Villa De Suma",
+    "Villa Eshara 3",
+    "Villa Putih",
+    "Villa Alopa"
+]}

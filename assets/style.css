@@ -1,0 +1,153 @@
+/*XS*/
+@media screen and (max-width: 567px){
+    .hide-on-xs, .hide-lt-sm, .hide-lt-md, .hide-lt-lg, .hide-lt-xl{ display: none !important; }
+}
+/*SM*/
+@media screen and (min-width: 568px) and (max-width: 767px){
+    .hide-gt-xs, .hide-on-sm, .hide-lt-md, .hide-lt-lg, .hide-lt-xl{ display: none !important; }
+}
+/*MD*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .hide-gt-xs, .hide-gt-sm, .hide-on-md, .hide-lt-lg, .hide-lt-xl{ display: none !important; }
+}
+/*LG*/
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .hide-gt-xs, .hide-gt-sm, .hide-gt-md, .hide-on-lg, .hide-lt-xl{ display: none !important; }
+}
+/*XL*/
+@media screen and (min-width: 1280px){
+    .hide-gt-xs, .hide-gt-sm, .hide-gt-md, .hide-gt-lg, .hide-on-xl{ display: none !important; }
+}
+.font-times{
+    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+.font-georgia{
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+.font-garamond{
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+.font-helvetica{
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.font-verdana{
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+.font-segoe{
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+.font-impact{
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+}
+.font-monospace{
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+.pure-menu-hide-children>.pure-menu-link:after{
+    color: transparent;
+    margin-left: -.5em;
+    content: "\25B8";
+    font-size: small;
+}
+/*.pure-menu-link{opacity: .75}*/
+/*.pure-menu-link:hover{text-decoration: underline;}*/
+.pure-menu-link:hover{text-decoration: none;}
+/*.pure-menu-link{box-shadow: 0 0 1px #ccc inset;}*/
+.swiper-container {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+} 
+.shadow{
+    box-shadow: 0 0 .5em #000;
+}
+
+html, button, input, select, textarea, *, * *,
+.pure-menu-link, .pure-g, .pure-g [class *= "pure-u"]{
+    font-family: inherit;
+    color: inherit;
+    /*background: inherit;*/
+}
+@media only screen and (max-width :480px){
+    .pure-form button[type=submit]{ margin:inherit; }
+    .pure-form input:not([type]),.pure-form input[type=text],.pure-form input[type=password],.pure-form input[type=email],.pure-form input[type=url],.pure-form input[type=date],.pure-form input[type=month],.pure-form input[type=time],.pure-form input[type=datetime],.pure-form input[type=datetime-local],.pure-form input[type=week],.pure-form input[type=number],.pure-form input[type=search],.pure-form input[type=tel],.pure-form input[type=color],.pure-form label{ margin-bottom: inherit; display: inline-block;}
+}
+.pure-menu-children{color: #333;}
+.pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus{background-color: inherit;}
+.pure-menu-children .pure-menu-link:hover, .pure-menu-children .pure-menu-link:focus{background-color: #ccc;}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    left: 0;
+    right: 0;
+}
+li{
+    padding: 1em 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+hr {
+    margin: 0;
+    border: 0;
+    height: 1px;
+    background: #007aff;
+}
+
+
+
+.float-right{float: right;}
+.full-width{width: 100%;}
+.pad{padding: .5em;}
+.pad-1{padding: 1em;}
+.pad-2{padding: 2em;}
+.left{text-align: left;}
+.right{text-align: right;}
+.center{text-align: center;}
+.justify{text-align: justify;}
+.slide-1{background-color: #f6f;}
+.slide-2{background-color: #ff6;}
+.slide-3{background-color: #6ff;}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 .5em;
+}
+
+.no-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.color-0{
+    background-color: transparent;
+    color: #333;
+}
+.color-1{
+    background-color: #fff;
+    color: #333;
+}
+.color-2{
+    background-color: #f6f6f6;
+    color: #333;
+}
+.color-3{
+    background-color: #eee;
+    color: #333;
+}
+.color-4{
+    background-color: #333;
+    color: #ccc;
+}
+
+.xxs{font-size: xx-small;}
+.xxs{font-size: x-small;}
+.s{font-size: small;}
+.l{font-size: large;}
+.xl{font-size: x-large;}
+.xxl{font-size: xx-large;}
