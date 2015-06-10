@@ -17,6 +17,9 @@
     font-size: small;
 }
 .pure-button{margin: .25em 0;}
+.pure-menu-link, .pure-menu-disabled, .pure-menu-heading {
+    padding: .5em;
+}
 .pure-menu-link:hover{text-decoration: none;}
 /*.pure-menu-link{opacity: .75}*/
 /*.pure-menu-link:hover{text-decoration: underline;}*/

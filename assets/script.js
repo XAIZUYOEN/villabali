@@ -14,14 +14,16 @@ new Pikaday({
     field: document.getElementById('checkout')
 });
 new Swiper('.swiper-container', {
-    loop: true,
-    effect: 'fade',
+    paginationClickable: true,
     pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    paginationClickable: true,
-    autoplay: 3000,
     autoplayDisableOnInteraction: false,
+    autoplay: 3000,
+    effect: 'fade',
+    // loop: true,
+    // spaceBetween: 30,
+    // fade: { crossFade: true },
     // direction: 'vertical',
     // grabCursor: true,
     // scrollbar: '.swiper-scrollbar',

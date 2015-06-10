@@ -71,7 +71,7 @@ hr {
     margin: 0;
     border: 0;
     height: 1px;
-    background: #007aff;
+    background: #0078e7;
 }
 img{
     vertical-align: middle;
@@ -100,6 +100,7 @@ img{
   max-width: 100%;
   height: auto;
   padding-bottom: 100%;
+  z-index: 1;
 }
 .flex-view>* {
   position: absolute;
@@ -168,5 +169,5 @@ img{
 }
 .img-circle{
     border-radius: 9999px;
-    border: solid .5em #fff;
+    border: solid 1px #0078e7;
 }
