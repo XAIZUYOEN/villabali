@@ -25,13 +25,6 @@ body.load *{opacity:0;visibility: hidden; overflow:hidden;}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
 }
-h1,h2,h3,h4,h5,h6{
-    padding-left: 1.5em;
-}
-.info h3,
-footer h3{
-    padding-left: 0;
-}
 .font-times{
     font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
@@ -102,18 +95,7 @@ img{
 img.full{
     width: 100%;
 }
-.blur {
-    filter: url("filter.svg#blur");
-    -webkit-filter: blur(16px);
-    filter: blur(16px);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='16');
-}
-.noblur {
-    filter: none;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-}
+
 select{
     border: 0;
     /*background-color: transparent;*/
@@ -128,7 +110,10 @@ select:focus{
   border: 0;
   outline: 0;
 }
-
+h1,h2,h3,h4,h5,h6{
+    padding-left: 16px;
+    margin: .5em 0;
+}
 .stick-right{right: 0; position: absolute;}
 .float-right{float: right;}
 .full-width{width: 100%;}
@@ -213,6 +198,9 @@ ul, ol{
     top: 0;
     z-index: 2;
 }
+.context-details{
+    cursor: default;
+}
 .context-books{
     position: absolute;
     right: 0.5em;
@@ -235,6 +223,10 @@ ul, ol{
     width: 100%;
 }
 
+.static-map{
+    background-image: url('staticmap.png');
+    background-size: cover;
+}
 .similar{
     background-image: url('http://placehold.it/300x300');
     background-size: cover;
@@ -244,8 +236,13 @@ ul, ol{
     width: 100%;
     bottom: 0;
 }
-.info h3{
+.info h4{
     margin: .25em 0;
+    padding-left: 0;
+}
+footer h3{
+    padding-left: 0;
+    margin: 1em 0;
 }
 .home-link{
     height: 44px;
@@ -255,3 +252,20 @@ ul, ol{
 .home-link:hover{
     background-color: inherit;
 }
+
+.blur {
+    filter: url("filter.svg#blur");
+    -webkit-filter: blur(16px);
+    filter: blur(16px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='16');
+}
+.noblur {
+    filter: none;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+.scroll{
+    overflow-y: auto;
+}
+.min-width-10em{min-width: 10em;}
