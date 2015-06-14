@@ -25,6 +25,13 @@ body.load *{opacity:0;visibility: hidden; overflow:hidden;}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+    padding-left: 1.5em;
+}
+.info h3,
+footer h3{
+    padding-left: 0;
+}
 .font-times{
     font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
@@ -239,4 +246,12 @@ ul, ol{
 }
 .info h3{
     margin: .25em 0;
+}
+.home-link{
+    height: 44px;
+    height: 2.75em;
+}
+.home-link:focus,
+.home-link:hover{
+    background-color: inherit;
 }
