@@ -1,4 +1,3 @@
-var tmp;
 new Pikaday({
     format: 'YYYY/MM/DD',
     minDate: moment().toDate(),
@@ -13,25 +12,43 @@ new Pikaday({
     yearRange: 1,
     field: document.getElementById('checkout')
 });
-new Swiper('.swiper-container', {
+
+// Swiper config
+mySwiper = new Swiper('.swiper-container', {
     paginationClickable: true,
-    pagination: '.swiper-pagination',
+    autoplayDisableOnInteraction: false,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    autoplayDisableOnInteraction: false,
-    autoplay: 3000,
-    effect: 'fade',
-    // loop: true,
+    // pagination: '.swiper-pagination',
+    // scrollbar: '.swiper-scrollbar',
+    autoplay: 4500,
+    speed: 500,
+    // effect: 'fade',
+    loop: true,
     // spaceBetween: 30,
     // fade: { crossFade: true },
     // direction: 'vertical',
     // grabCursor: true,
-    // scrollbar: '.swiper-scrollbar',
 });
-tmp = document.getElementById('tobe_header');
-new Waypoint({
-    element: tmp,
-    handler: function() {
-        console.log('sasugaaa');
-    }
+
+// memory intensive, prefer using 1 blur image (in this case using slide 0)
+// mySwiper.on('slideChangeStart', function (mySwiper) {
+//     remCls(getCls("swiper-bg")[0], "slide-"+mySwiper.previousIndex);
+//     addCls(getCls("swiper-bg")[0], "slide-"+mySwiper.activeIndex);
+// });
+
+// new Waypoint({
+//     element: document.getElementById('tobe_header'),
+//     handler: function() {
+//         // tmp = element.offsetTop - element.scrollTop + element.clientTop;
+//         // element.style.position = (element.style.position!=="fixed" && tmp>0) ? "fixed" : "";
+//         // console.log(tmp);
+//     }
+// });
+app = angular.module('vbali', []);
+app.controller('MainCtrl', function ($scope, $http) {
+    $http.get('./assets/mock-server.json').success(function(data) {
+        remCls(getTag("HTML")[0], "load");
+        remCls(getTag("BODY")[0], "load");
+    });
 });

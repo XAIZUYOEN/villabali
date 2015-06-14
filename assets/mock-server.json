@@ -1,62 +1,86 @@
-res : {
-"currency" : [
-    {"iso": "AUD", "symbol": "$"},
-    {"iso": "RMB", "symbol": "¥"},
-    {"iso": "EUR", "symbol": "€"},
-    {"iso": "GBP", "symbol": "£"},
-    {"iso": "HKD", "symbol": "$"},
-    {"iso": "IDR", "symbol": "Rp"},
-    {"iso": "JPY", "symbol": "¥"},
-    {"iso": "KRW", "symbol": "₩"},
-    {"iso": "RUB", "symbol": "₽"},
-    {"iso": "SEK", "symbol": "kr"},
-    {"iso": "SGD", "symbol": "$"},
-    {"iso": "USD", "symbol": "$"}
+{
+"currency": [
+    {"iso": "AUD", "sym": "$"},
+    {"iso": "EUR", "sym": "€"},
+    {"iso": "GBP", "sym": "£"},
+    {"iso": "HKD", "sym": "$"},
+    {"iso": "IDR", "sym": "Rp"},
+    {"iso": "JPY", "sym": "¥"},
+    {"iso": "KRW", "sym": "₩"},
+    {"iso": "RMB", "sym": "¥"},
+    {"iso": "RUB", "sym": "₽"},
+    {"iso": "SEK", "sym": "kr"},
+    {"iso": "SGD", "sym": "$"},
+    {"iso": "USD", "sym": "$"}
 ],
-
-
-"language" : [
-    "Deutsch",
-    "English",
-    "English (Australia)",
-    "English (Hong Kong)",
-    "English (Singapore)",
-    "Français",
-    "Bahasa Indonesia",
-    "Italiano",
-    "日本語",
-    "한국어",
-    "Nederlands",
-    "Английский",
-    "Svenska",
-    "简体中文"
+"language": [
+    {"iso": "de", "lang": "Deutsch"},
+    {"iso": "en", "lang": "English"},
+    {"iso": "fr", "lang": "Français"},
+    {"iso": "id", "lang": "Bahasa Indonesia"},
+    {"iso": "it", "lang": "Italiano"},
+    {"iso": "jp", "lang": "日本語"},
+    {"iso": "kr", "lang": "한국어"},
+    {"iso": "nl", "lang": "Nederlands"},
+    {"iso": "ru", "lang": "Русский"},
+    {"iso": "se", "lang": "Svenska"},
+    {"iso": "zh", "lang": "中文（简体）‎"}
 ],
-
-"location" : [
-    "Seminyak",
-    "Canggu",
-    "Kuta, Legian &amp; surroundings",
-    "Ubud &amp; surroundings",
-    "Sanur &amp; Ketewel",
-    "Uluwatu, Nusa Dua &amp; Jimbaran",
-    "Lovina, Pemuteran &amp; the North",
-    "Amed, Candidasa &amp; the East",
-    "Tabanan, Balian &amp; the West",
-    "Gili, Lombok &amp; Nusa Lembongan",
-    "Umalas &amp; Kerobokan"
-],
-
-"villa" : [
-    "Villa Irma",
-    "Villa Arte",
-    "Villa Bewa",
-    "Villa Crystal",
-    "Villa Domus de Janas",
-    "Villa Exotic Stay",
-    "Villa Paya Paya",
-    "Villa Abakoi",
-    "Villa De Suma",
-    "Villa Eshara 3",
-    "Villa Putih",
-    "Villa Alopa"
+"location": [
+    {"loc": "Seminyak",
+        "vla": [
+            {"name": "Villa Irma", "url": "//"},
+            {"name": "Villa Arte", "url": "//"},
+            {"name": "Villa Bewa", "url": "//"},
+            {"name": "Villa Crystal", "url": "//"},
+            {"name": "Villa Domus de Janas", "url": "//"},
+            {"name": "Villa Exotic Stay", "url": "//"},
+            {"name": "Villa Paya Paya", "url": "//"},
+            {"name": "Villa Abakoi", "url": "//"},
+            {"name": "Villa De Suma", "url": "//"},
+            {"name": "Villa Eshara 3", "url": "//"},
+            {"name": "Villa Putih", "url": "//"},
+            {"name": "Villa Alopa", "url": "//"}
+        ]
+    },{"loc": "Canggu",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Kuta, Legian & surroundings",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Ubud & surroundings",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Sanur & Ketewel",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Uluwatu, Nusa Dua & Jimbaran",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Lovina, Pemuteran & the North",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Amed, Candidasa & the East",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Tabanan, Balian & the West",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Gili, Lombok & Nusa Lembongan",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    },{"loc": "Umalas & Kerobokan",
+        "vla": [
+            {"name": "xxx", "url":"//"}
+        ]
+    }
 ]}

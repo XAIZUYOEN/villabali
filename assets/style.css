@@ -1,3 +1,6 @@
+html.load, body.load{margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
+body.load {background:#fff url("0.gif") no-repeat center;}
+body.load *{opacity:0;visibility: hidden; overflow:hidden;}
 /*XS*/
 @media screen and (max-width: 567px){
     .hide-on-xs, .hide-lt-sm, .hide-lt-md, .hide-lt-lg, .hide-lt-xl{ display: none !important; }
@@ -18,6 +21,7 @@
 @media screen and (min-width: 1280px){
     .hide-gt-xs, .hide-gt-sm, .hide-gt-md, .hide-gt-lg, .hide-on-xl{ display: none !important; }
 }
+.font-montserrat,
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
 }
@@ -46,23 +50,34 @@ h1,h2,h3,h4,h5,h6{
     font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 }
 .pika-single,
-html, button, input, select, textarea, *, * *{
+html, button, input, select, textarea,
+*, * *{
     font-family: inherit;
     color: inherit;
+    position: relative;
 }
-
-header {
+body *{
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+/*header {
     position: fixed;
     width: 100%;
     z-index: 9;
     left: 0;
     right: 0;
-}
+}*/
 li{
     padding: .5em 0;
 }
+footer a{
+    color: inherit;
+}
 a{
     text-decoration: none;
+    color: #0078e7;
 }
 a:hover{
     text-decoration: underline;
@@ -75,9 +90,39 @@ hr {
 }
 img{
     vertical-align: middle;
+    max-width: 100%;
+}
+img.full{
+    width: 100%;
+}
+.blur {
+    filter: url("filter.svg#blur");
+    -webkit-filter: blur(16px);
+    filter: blur(16px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='16');
+}
+.noblur {
+    filter: none;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+select{
+    border: 0;
+    /*background-color: transparent;*/
+    color: #333;
+    /*margin: .25em 0 .25em .25em;*/
+    padding: .25em;
+    cursor: pointer;
+    max-width: 100%;
+    margin: 0;
+}
+select:focus{
+  border: 0;
+  outline: 0;
 }
 
-
+.stick-right{right: 0; position: absolute;}
 .float-right{float: right;}
 .full-width{width: 100%;}
 .pad{padding: .5em;}
@@ -88,7 +133,7 @@ img{
 .center{text-align: center;}
 .justify{text-align: justify;}
 .xxs{font-size: xx-small;}
-.xxs{font-size: x-small;}
+.xs{font-size: x-small;}
 .s{font-size: small;}
 .l{font-size: large;}
 .xl{font-size: x-large;}
@@ -116,14 +161,16 @@ img{
 
 .shadow{
     box-shadow: 0 0 .5em #000;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
 }
 
 .container{
     max-width: 960px;
     margin: auto;
-    padding: 0 .5em;
 }
-
+ul, ol{
+    padding-left: 1.5em;
+}
 .no-list{
     list-style: none;
     margin: 0;
@@ -156,8 +203,10 @@ img{
     padding: .5em;
     background-color: #fff;
     position: relative;
+    top: 0;
+    z-index: 2;
 }
-.context-book{
+.context-books{
     position: absolute;
     right: 0.5em;
     top: 0.5em;
@@ -167,7 +216,27 @@ img{
 .pickdate{
     max-width: 8em;
 }
-.img-circle{
+.circle{
     border-radius: 9999px;
     border: solid 1px #0078e7;
+}
+.swiper-bg{
+    background-size: cover;
+    position: absolute;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+}
+
+.similar{
+    background-image: url('http://placehold.it/300x300');
+    background-size: cover;
+}
+.info{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.info h3{
+    margin: .25em 0;
 }
