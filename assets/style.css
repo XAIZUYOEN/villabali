@@ -182,6 +182,18 @@ footer h3{
     box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
     box-shadow: 0 .25em 1em -.25em rgba(0,0,0,.5);
 }
+.overlay:hover{
+    background: #666;
+    opacity: .5;
+}
+.overlay{
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
 .no-list{
     list-style: none;
     margin: 0;

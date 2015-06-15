@@ -3,6 +3,7 @@ new Pikaday({
     minDate: moment().toDate(),
     maxDate: moment().add(1, 'years').toDate(),
     yearRange: 1,
+    trigger: getId('trig-checkin'),
     field: getId('checkin')
 });
 new Pikaday({
@@ -10,12 +11,9 @@ new Pikaday({
     minDate: moment().toDate(),
     maxDate: moment().add(1, 'years').toDate(),
     yearRange: 1,
+    trigger: getId('trig-checkout'),
     field: getId('checkout')
 });
-if (ismobile()) {
-    getId('checkin').blur();
-    getId('checkout').blur();
-}
 // Swiper config
 mySwiper = new Swiper('.swiper-container', {
     paginationClickable: true,
