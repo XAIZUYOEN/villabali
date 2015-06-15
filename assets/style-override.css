@@ -32,11 +32,7 @@
 
 
 .swiper-pagination-bullet {
-    box-shadow: 0 0 0 2px #fff;
-    opacity: 0.4;
-}
-.swiper-pagination-bullet-active{
-    opacity: 1;
+    border: solid 2px #fff;
 }
 .swiper-container {
     width: 100%;

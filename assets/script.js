@@ -19,7 +19,7 @@ mySwiper = new Swiper('.swiper-container', {
     autoplayDisableOnInteraction: false,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    // pagination: '.swiper-pagination',
+    pagination: '.swiper-pagination',
     // scrollbar: '.swiper-scrollbar',
     autoplay: 4500,
     speed: 500,
