@@ -204,6 +204,11 @@ select:focus{
     top: 0;
     z-index: 2;
 }
+@media only screen and (max-width :767px){
+    .context-details {
+        border-top: solid 1px;
+    }
+}
 .context-details{
     padding: .5em 0;
 }
