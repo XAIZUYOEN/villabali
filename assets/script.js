@@ -1,17 +1,17 @@
-new Pikaday({
-    format: 'YYYY/MM/DD',
-    minDate: moment().toDate(),
-    maxDate: moment().add(1, 'years').toDate(),
-    yearRange: 1,
-    field: document.getElementById('checkin')
-});
-new Pikaday({
-    format: 'YYYY/MM/DD',
-    minDate: moment().toDate(),
-    maxDate: moment().add(1, 'years').toDate(),
-    yearRange: 1,
-    field: document.getElementById('checkout')
-});
+// new Pikaday({
+//     format: 'YYYY/MM/DD',
+//     minDate: moment().toDate(),
+//     maxDate: moment().add(1, 'years').toDate(),
+//     yearRange: 1,
+//     field: document.getElementById('checkin')
+// });
+// new Pikaday({
+//     format: 'YYYY/MM/DD',
+//     minDate: moment().toDate(),
+//     maxDate: moment().add(1, 'years').toDate(),
+//     yearRange: 1,
+//     field: document.getElementById('checkout')
+// });
 
 // Swiper config
 mySwiper = new Swiper('.swiper-container', {

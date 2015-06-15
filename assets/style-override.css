@@ -61,10 +61,12 @@
 }
 #layout {
     left: 0;
-    overflow-x:hidden;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .responsive-vertical .pure-menu-item{
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: auto;
 }
 .responsive-vertical .pure-menu-link{
     background-color: #fff;
