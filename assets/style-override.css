@@ -1,3 +1,4 @@
+/* PURECSS VERTICAL MENU */
 .pure-menu-link, .pure-g, .pure-g [class *= "pure-u"]{
     font-family: inherit;
     color: inherit;
@@ -6,11 +7,13 @@
     .pure-form button[type=submit]{ margin:inherit; }
     .pure-form input:not([type]),.pure-form input[type=text],.pure-form input[type=password],.pure-form input[type=email],.pure-form input[type=url],.pure-form input[type=date],.pure-form input[type=month],.pure-form input[type=time],.pure-form input[type=datetime],.pure-form input[type=datetime-local],.pure-form input[type=week],.pure-form input[type=number],.pure-form input[type=search],.pure-form input[type=tel],.pure-form input[type=color],.pure-form label{ margin-bottom: inherit; display: inline-block;}
 }
-.pure-menu-children{color: #333;z-index: 9;}
+.responsive-vertical{border-right: solid 1px;}
 .responsive-vertical .pure-menu-link{width: 100%;}
 
-/*.pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus{background-color: inherit;}*/
+/*
+.pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus{background-color: inherit;}
 .pure-menu-children .pure-menu-link:hover, .pure-menu-children .pure-menu-link:focus{background-color: #ccc;}
+.pure-menu-children{color: #333;z-index: 9;}
 
 .pure-menu-hide-children>.pure-menu-link:after{
     color: transparent;
@@ -18,19 +21,31 @@
     content: "\25B8";
     font-size: small;
 }
-/*.pure-button{margin: .25em 0;}*/
+.pure-button{margin: .25em 0;}
+.pure-menu-link{opacity: .75}
+.pure-menu-link{box-shadow: 0 0 1px #ccc inset;}
+*/
+
+.pure-menu-link:hover{text-decoration: none;}
 .pure-menu-link, .pure-menu-disabled, .pure-menu-heading {
     padding: .5em;
+    border: 0;
+    border-top: solid 1px #222;
+    border-radius: 0;
 }
-.pure-menu-link:hover{text-decoration: none;}
-/*.pure-menu-link{opacity: .75}*/
-/*.pure-menu-link:hover{text-decoration: underline;}*/
-/*.pure-menu-link{box-shadow: 0 0 1px #ccc inset;}*/
 .pure-form fieldset{padding: 0 0 .5em;}
 
 
 
 
+/* SWIPER */
+.swiper-bg{
+    background-size: cover;
+    position: absolute;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+}
 .swiper-pagination-bullet {
     border: solid 2px #fff;
 }
@@ -49,3 +64,34 @@
 .slide-5{background-image: url('slide/villa-irma-6241f71a.jpg');}
 .slide-6{background-image: url('slide/villa-irma-8660d51d.jpg');}
 .slide-7{background-image: url('slide/villa-irma-9565485a.jpg');}
+
+
+/* PURECSS VERTICAL MENU */
+.home-link{
+    height: 44px;
+    height: 2.75em;
+}
+.home-link:focus,
+.home-link:hover{
+    background-color: inherit;
+}
+
+#menu a {
+    padding: 0;
+}
+#layout {
+    left: 0;
+    overflow-x:hidden;
+}
+.pure-button.pure-menu-link{
+    background-color: #f33;
+    color: #fff;
+}
+
+/* PIKADAY */
+.pika-single{
+    font-family: inherit;
+}
+.pickdate{
+    /*max-width: 8em;*/
+}

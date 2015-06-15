@@ -86,7 +86,7 @@ appears on the left side of the page.
     left: 0;
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
-    background: #222;
+    background: #191818;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -97,7 +97,6 @@ appears on the left side of the page.
         color: #999;
         border: none;
         padding: 0.6em 0 0.6em 0.6em;
-        padding: 0;
     }
 
     /*
@@ -163,7 +162,8 @@ small screens.
     display: block; /* show this only on small screens */
     top: 0;
     left: 0; /* "#menu width" */
-    background: #222;
+    background: #000;
+    background: rgba(0,0,0,0.7);
     font-size: 10px; /* change this value to increase/decrease button size */
     z-index: 10;
     width: 2em;
@@ -243,7 +243,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     #layout.active {
         position: relative;
         left: 150px;
-        overflow-x: hidden;
     }
 }
 
