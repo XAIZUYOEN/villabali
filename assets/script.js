@@ -13,8 +13,8 @@ new Pikaday({
     field: getId('checkout')
 });
 if (ismobile()) {
-    bindEvent(getId('checkin'), 'focus', function(){blur();});
-    bindEvent(getId('checkout'), 'focus', function(){blur();});
+    bindEvent(getId('checkin'), 'focus', function(){getId('checkin').blur();});
+    bindEvent(getId('checkout'), 'focus', function(){getId('checkout').blur();});
 }
 // Swiper config
 mySwiper = new Swiper('.swiper-container', {
