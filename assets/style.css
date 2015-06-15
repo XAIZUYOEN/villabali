@@ -1,9 +1,9 @@
-/* gif animation */
+/* gif animation================================== */
 html.load, body.load{margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
 body.load {background:#fff url("0.gif") no-repeat center;}
 body.load *{opacity:0;visibility: hidden; overflow:hidden;}
 
-/* hide on certain width */
+/* hide on certain width================================== */
 @media screen and (max-width: 567px){
     .hide-on-xs, .hide-lt-sm, .hide-lt-md, .hide-lt-lg, .hide-lt-xl{ display: none !important; }
 }
@@ -21,7 +21,7 @@ body.load *{opacity:0;visibility: hidden; overflow:hidden;}
 }
 
 
-/* font family */
+/* font family================================== */
 .font-montserrat{
     font-family: 'Montserrat', sans-serif;
 }
@@ -51,7 +51,7 @@ body.load *{opacity:0;visibility: hidden; overflow:hidden;}
 }
 
 
-/* TAG */
+/* tag================================== */
 html, body{
     max-width: 100%;
 }
@@ -101,16 +101,10 @@ img{
 ul, ol{
     padding-left: 1.5em;
 }
-.no-list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+
 select{
     border: 0;
-    /*background-color: transparent;*/
     color: #333;
-    /*margin: .25em 0 .25em .25em;*/
     padding: .25em;
     cursor: pointer;
     max-width: 100%;
@@ -120,8 +114,13 @@ select:focus{
   border: 0;
   outline: 0;
 }
-.stick-right{right: 0; position: absolute;}
-.float-right{float: right;}
+
+footer h3{
+    padding-left: 0;
+    margin: 1em 0;
+}
+
+/* class================================== */
 .full-width{width: 100%;}
 .pad-1-8{padding: .125em;}
 .pad-1-4{padding: .25em;}
@@ -139,7 +138,129 @@ select:focus{
 .xl{font-size: x-large;}
 .xxl{font-size: xx-large;}
 .bold{font-weight: bold;}
+.scroll{ overflow-y: auto; }
+.min-width-5em{min-width: 5em;}
+.min-width-6em{min-width: 6em;}
+.min-width-7em{min-width: 7em;}
+.min-width-8em{min-width: 8em;}
+.min-width-9em{min-width: 9em;}
+.min-width-10em{min-width: 10em;}
+.min-width-15em{min-width: 15em;}
+.min-width-16em{min-width: 16em;}
+.min-width-17em{min-width: 17em;}
+.min-width-18em{min-width: 18em;}
+.min-width-19em{min-width: 19em;}
+.min-width-20em{min-width: 20em;}
 
+
+.container{
+    max-width: 960px;
+    margin: auto;
+}
+.color-0{
+    background-color: transparent;
+    color: #333;
+}
+.color-1{
+    background-color: #fff;
+    color: #333;
+}
+.color-2{
+    background-color: #f6f6f6;
+    color: #333;
+}
+.color-3{
+    background-color: #eee;
+    color: #333;
+}
+.color-4{
+    background-color: #333;
+    color: #ccc;
+}
+.shadow{
+    box-shadow: 0 0 .5em #000;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
+    box-shadow: 0 .25em 1em -.25em rgba(0,0,0,.5);
+}
+.no-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.circle{
+    border-radius: 9999px;
+    border: solid 2px #f03;
+}
+
+.static-map{
+    background-image: url('staticmap.png');
+    background-size: cover;
+    background-position: center;
+}
+.similar{
+    background-image: url('http://placehold.it/300x300');
+    background-size: cover;
+    background-position: center;
+}
+.blur {
+    filter: url("filter.svg#blur");
+    -webkit-filter: blur(16px);
+    filter: blur(16px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='16');
+}
+.noblur {
+    filter: none;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+/* context================================== */
+@media only screen and (max-width :767px){
+    .context-details {
+        border-top: solid 1px;
+    }
+}
+.context-card{
+    margin-bottom: 1em;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    z-index: 2;
+}
+.context-details{
+    padding: .5em 0;
+}
+.context-books{
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+}
+.context-title, .context-aux, .context-price{
+    margin: .25em;
+}
+
+/* info card================================== */
+.info-top,.info-left,.info-right,.info-bottom{
+    position: absolute;
+    opacity: .5;
+}
+.info-top:hover,.info-left:hover,.info-right:hover,.info-bottom:hover{
+    opacity: 1;
+}
+.info-top a,.info-left a,.info-right a,.info-bottom a{
+    color: #fff;
+}
+.info-top h4,.info-left h4,.info-right h4,.info-bottom h4{
+    padding: .5em;
+}
+.info-top, .info-bottom{width: 100%;}
+.info-left,.info-right{height: 100%;}
+.info-bottom{bottom: 0;}
+.info-right{right: 0;}
+.info-left{left: 0;}
+.info-top{top: 0;}
+
+/* flex-view & ratio================================== */
 .flex-view {
   overflow: hidden;
   position: relative;
@@ -165,153 +286,3 @@ select:focus{
 .ratio-10-16{padding-bottom: 62.5%;}
 .ratio-3-4  {padding-bottom: 75%;}
 .ratio-4-5  {padding-bottom: 80%;}
-
-.shadow{
-    box-shadow: 0 0 .5em #000;
-    box-shadow: 0 5px 15px -5px rgba(0,0,0,.5);
-    box-shadow: 0 .25em 1em -.25em rgba(0,0,0,.5);
-}
-
-.container{
-    max-width: 960px;
-    margin: auto;
-}
-
-.full{
-    width: 100%;
-}
-.color-0{
-    background-color: transparent;
-    color: #333;
-}
-.color-1{
-    background-color: #fff;
-    color: #333;
-}
-.color-2{
-    background-color: #f6f6f6;
-    color: #333;
-}
-.color-3{
-    background-color: #eee;
-    color: #333;
-}
-.color-4{
-    background-color: #333;
-    color: #ccc;
-}
-
-.context-card{
-    margin-bottom: 1em;
-    background-color: #fff;
-    position: relative;
-    top: 0;
-    z-index: 2;
-}
-@media only screen and (max-width :767px){
-    .context-details {
-        border-top: solid 1px;
-    }
-}
-.context-details{
-    padding: .5em 0;
-}
-.context-books{
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-}
-.context-title, .context-aux, .context-price{
-    margin: .25em;
-}
-
-
-.circle{
-    border-radius: 9999px;
-    border: solid 2px #f03;
-}
-
-.static-map{
-    background-image: url('staticmap.png');
-    background-size: cover;
-    background-position: center;
-}
-.similar{
-    background-image: url('http://placehold.it/300x300');
-    background-size: cover;
-    background-position: center;
-}
-.info-top,
-.info-left,
-.info-right,
-.info-bottom{
-    position: absolute;
-    opacity: .5;
-}
-.info-top:hover,
-.info-left:hover,
-.info-right:hover,
-.info-bottom:hover{
-    opacity: 1;
-}
-.info-top{
-    width: 100%;
-    top: 0;
-}
-.info-left{
-    height: 100%;
-    left: 0;
-}
-.info-right{
-    height: 100%;
-    right: 0;
-}
-.info-bottom{
-    width: 100%;
-    bottom: 0;
-}
-.info-top a,
-.info-left a,
-.info-right a,
-.info-bottom a{
-    color: #fff;
-}
-.info-top h4,
-.info-left h4,
-.info-right h4,
-.info-bottom h4{
-    padding: .5em;
-}
-footer h3{
-    padding-left: 0;
-    margin: 1em 0;
-}
-
-
-.blur {
-    filter: url("filter.svg#blur");
-    -webkit-filter: blur(16px);
-    filter: blur(16px);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='16');
-}
-.noblur {
-    filter: none;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
-}
-.scroll{
-    overflow-y: auto;
-}
-.min-width-5em{min-width: 5em;}
-.min-width-6em{min-width: 6em;}
-.min-width-7em{min-width: 7em;}
-.min-width-8em{min-width: 8em;}
-.min-width-9em{min-width: 9em;}
-.min-width-10em{min-width: 10em;}
-.min-width-15em{min-width: 15em;}
-.min-width-16em{min-width: 16em;}
-.min-width-17em{min-width: 17em;}
-.min-width-18em{min-width: 18em;}
-.min-width-19em{min-width: 19em;}
-.min-width-20em{min-width: 20em;}
