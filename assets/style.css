@@ -217,7 +217,9 @@ select:focus{
     right: 0.5em;
     top: 0.5em;
 }
-.context-title, .context-aux, .context-price{margin: .25em}
+.context-title, .context-aux, .context-price{
+    margin: .25em;
+}
 
 
 .circle{
