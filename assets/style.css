@@ -60,6 +60,9 @@ html, button, input, select, textarea,
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    padding-left: 16px;
+    margin: .5em 0;
 }
 body *{
     -webkit-transition: all .25s ease;
@@ -75,7 +78,7 @@ footer a{
 }
 a{
     text-decoration: none;
-    color: #0078e7;
+    color: #f03;
 }
 a:hover{
     text-decoration: underline;
@@ -83,8 +86,8 @@ a:hover{
 hr {
     margin: 0;
     border: 0;
-    height: 1px;
-    background: #0078e7;
+    height: 2px;
+    background: #f03;
 }
 img{
     vertical-align: middle;
@@ -113,10 +116,6 @@ select:focus{
   border: 0;
   outline: 0;
 }
-h1,h2,h3,h4,h5,h6{
-    padding-left: 16px;
-    margin: .5em 0;
-}
 .stick-right{right: 0; position: absolute;}
 .float-right{float: right;}
 .full-width{width: 100%;}
@@ -135,6 +134,7 @@ h1,h2,h3,h4,h5,h6{
 .l{font-size: large;}
 .xl{font-size: x-large;}
 .xxl{font-size: xx-large;}
+.bold{font-weight: bold;}
 
 .flex-view {
   overflow: hidden;
@@ -151,10 +151,16 @@ h1,h2,h3,h4,h5,h6{
   left: 0;
   top: 0;
 }
-.ratio-2-1  {padding-bottom: 50%}
-.ratio-16-9 {padding-bottom: 56.25%}
-.ratio-16-10{padding-bottom: 62.5%}
-.ratio-4-3  {padding-bottom: 75%}
+.ratio-2-1  {padding-bottom: 200%;}
+.ratio-16-9 {padding-bottom: 177.78%;}
+.ratio-16-10{padding-bottom: 160%;}
+.ratio-4-3  {padding-bottom: 150%;}
+.ratio-5-4  {padding-bottom: 125%;}
+.ratio-1-2  {padding-bottom: 50%;}
+.ratio-9-16 {padding-bottom: 56.25%;}
+.ratio-10-16{padding-bottom: 62.5%;}
+.ratio-3-4  {padding-bottom: 75%;}
+.ratio-4-5  {padding-bottom: 80%;}
 
 .shadow{
     box-shadow: 0 0 .5em #000;
@@ -199,7 +205,6 @@ h1,h2,h3,h4,h5,h6{
     z-index: 2;
 }
 .context-details{
-    cursor: default;
     padding: .5em 0;
 }
 .context-books{
@@ -212,25 +217,59 @@ h1,h2,h3,h4,h5,h6{
 
 .circle{
     border-radius: 9999px;
-    border: solid 1px #0078e7;
+    border: solid 2px #f03;
 }
 
 .static-map{
     background-image: url('staticmap.png');
     background-size: cover;
+    background-position: center;
 }
 .similar{
     background-image: url('http://placehold.it/300x300');
     background-size: cover;
+    background-position: center;
 }
-.info{
+.info-top,
+.info-left,
+.info-right,
+.info-bottom{
     position: absolute;
+    opacity: .5;
+}
+.info-top:hover,
+.info-left:hover,
+.info-right:hover,
+.info-bottom:hover{
+    opacity: 1;
+}
+.info-top{
+    width: 100%;
+    top: 0;
+}
+.info-left{
+    height: 100%;
+    left: 0;
+}
+.info-right{
+    height: 100%;
+    right: 0;
+}
+.info-bottom{
     width: 100%;
     bottom: 0;
 }
-.info h4{
-    margin: .25em 0;
-    padding-left: 0;
+.info-top a,
+.info-left a,
+.info-right a,
+.info-bottom a{
+    color: #fff;
+}
+.info-top h4,
+.info-left h4,
+.info-right h4,
+.info-bottom h4{
+    padding: .5em;
 }
 footer h3{
     padding-left: 0;
@@ -253,4 +292,15 @@ footer h3{
 .scroll{
     overflow-y: auto;
 }
+.min-width-5em{min-width: 5em;}
+.min-width-6em{min-width: 6em;}
+.min-width-7em{min-width: 7em;}
+.min-width-8em{min-width: 8em;}
+.min-width-9em{min-width: 9em;}
 .min-width-10em{min-width: 10em;}
+.min-width-15em{min-width: 15em;}
+.min-width-16em{min-width: 16em;}
+.min-width-17em{min-width: 17em;}
+.min-width-18em{min-width: 18em;}
+.min-width-19em{min-width: 19em;}
+.min-width-20em{min-width: 20em;}
