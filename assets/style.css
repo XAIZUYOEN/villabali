@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6{
     padding-left: 16px;
     margin: .5em 0;
 }
-body *{
+section *{
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
     -o-transition: all .25s ease;
