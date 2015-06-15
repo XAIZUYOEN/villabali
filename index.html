@@ -104,10 +104,10 @@
                 </li>
                 <li class="pure-menu-item pad-1-8"></li>
                 <li class="pure-menu-item">
-                    <input type="text" class="pickdate pure-menu-link" onfocus="blur();" id="checkin" placeholder="Check In">
+                    <input type="text" class="pickdate pure-menu-link" id="checkin" placeholder="Check In">
                 </li>
                 <li class="pure-menu-item">
-                    <input type="text" class="pickdate pure-menu-link" onfocus="blur();" id="checkout" placeholder="Check Out">
+                    <input type="text" class="pickdate pure-menu-link" id="checkout" placeholder="Check Out">
                 </li>
                 <li class="pure-menu-item pad"></li>
                 <li class="pure-menu-item">
@@ -396,8 +396,8 @@
         <i class="hide script">
             <script src="assets/vanilla.js"></script>
             <script type="text/javascript">
-                addCls(getTag("HTML")[0], "load");
-                addCls(getTag("BODY")[0], "load");
+                addClass(getTag("HTML")[0], "load");
+                addClass(getTag("BODY")[0], "load");
             </script>
             <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.7/js/swiper.min.js"></script>

@@ -3,16 +3,19 @@ new Pikaday({
     minDate: moment().toDate(),
     maxDate: moment().add(1, 'years').toDate(),
     yearRange: 1,
-    field: document.getElementById('checkin')
+    field: getId('checkin')
 });
 new Pikaday({
     format: 'YYYY/MM/DD',
     minDate: moment().toDate(),
     maxDate: moment().add(1, 'years').toDate(),
     yearRange: 1,
-    field: document.getElementById('checkout')
+    field: getId('checkout')
 });
-
+if (ismobile()) {
+    bindEvent(getId('checkin'), 'focus', function(){blur();});
+    bindEvent(getId('checkout'), 'focus', function(){blur();});
+}
 // Swiper config
 mySwiper = new Swiper('.swiper-container', {
     paginationClickable: true,
@@ -33,12 +36,12 @@ mySwiper = new Swiper('.swiper-container', {
 
 // memory intensive, prefer using 1 blur image (in this case using slide 0)
 // mySwiper.on('slideChangeStart', function (mySwiper) {
-//     remCls(getCls("swiper-bg")[0], "slide-"+mySwiper.previousIndex);
-//     addCls(getCls("swiper-bg")[0], "slide-"+mySwiper.activeIndex);
+//     remClass(getClass("swiper-bg")[0], "slide-"+mySwiper.previousIndex);
+//     addClass(getClass("swiper-bg")[0], "slide-"+mySwiper.activeIndex);
 // });
 
 // new Waypoint({
-//     element: document.getElementById('tobe_header'),
+//     element: getId('tobe_header'),
 //     handler: function() {
 //         // tmp = element.offsetTop - element.scrollTop + element.clientTop;
 //         // element.style.position = (element.style.position!=="fixed" && tmp>0) ? "fixed" : "";
@@ -48,7 +51,7 @@ mySwiper = new Swiper('.swiper-container', {
 app = angular.module('vbali', []);
 app.controller('MainCtrl', function ($scope, $http) {
     $http.get('./assets/mock-server.json').success(function(data) {
-        remCls(getTag("HTML")[0], "load");
-        remCls(getTag("BODY")[0], "load");
+        remClass(getTag("HTML")[0], "load");
+        remClass(getTag("BODY")[0], "load");
     });
 });
