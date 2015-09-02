@@ -239,22 +239,20 @@ footer h3{
     top: 0;
     z-index: 2;
 }
-.context-details{
-    padding: .5em 0;
+.context-details {
+    padding-left: 0;
 }
-.context-books{
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
-}
-.context-title, .context-aux, .context-price{
+.context-title,
+.context-rating,
+.context-details,
+.context-location{
     margin: .25em;
 }
 
 /* info card================================== */
 .info-top,.info-left,.info-right,.info-bottom{
     position: absolute;
-    opacity: .5;
+    opacity: .8;
 }
 .info-top:hover,.info-left:hover,.info-right:hover,.info-bottom:hover{
     opacity: 1;

@@ -27,13 +27,6 @@
 }
 
 /* PURECSS VERTICAL MENU */
-#menu a {
-    padding: 0;
-}
-#layout {
-    left: 0;
-    overflow-x: hidden;
-}
 .responsive-vertical .pure-menu-item{
     overflow-x: hidden;
 }
@@ -121,3 +114,14 @@
 .slide-5{background-image: url('slide/villa-irma-6241f71a.jpg');}
 .slide-6{background-image: url('slide/villa-irma-8660d51d.jpg');}
 .slide-7{background-image: url('slide/villa-irma-9565485a.jpg');}
+
+.dropcaps:first-child:first-letter {
+    float: left;
+    color: #903;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: Georgia;
+}

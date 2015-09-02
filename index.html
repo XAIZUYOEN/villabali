@@ -31,10 +31,10 @@
 <link rel="stylesheet" type="text/css" href="assets/side-menu.css">
 <link rel="stylesheet" type="text/css" href="assets/style-override.css">
 <link rel="stylesheet" type="text/css" href="assets/style.css">
-<body class="font-segoe color-0" id="layout">
+<body class="font-segoe color-0 side-menu-right" id="layout">
     <header>
-        <a href="#menu" id="menuLink" class="menu-link"><span></span></a>
-        <div id="menu" class="pure-menu responsive-vertical color-1 shadow">
+        <a href="#menu" class="menu-link" id="menuLink"><span></span></a>
+        <div class="pure-menu responsive-vertical color-1 shadow side-menu-right" id="menu">
             <a class="pure-menu-link home-link" href="./">
                 <div class="pad"><img src="assets/logo-bali.png" alt="villa-bali.com"></div>
             </a>
@@ -148,14 +148,21 @@
                 <div class="context-card shadow s " id="tobe_header">
                     <div class="pure-g">
                         <div class="pure-u-1 pure-u-md-1-2">
-                            <h1><span class="context-title">Villa Irma</span><br>
-                                <small class="context-aux s">Bali, Seminyak</small>
-                            </h1>
+                            <h1 class="context-title">Villa Irma</h1>
+                            <h3 class="context-rating">
+                                    <span class="star rating-35">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </span> &ensp; 8.8 / 10
+                            </h3>
+                            <h3 class="context-location"><i class="fa fa-map-marker"></i> Bali, Seminyak</h3>
                         </div>
                         <div class="pure-u-1 pure-u-md-1-2">
-                            <div class="context-details font-montserrat">
+                            <h3 class="context-details">
                                 <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
-                                    <!-- <a href="#" class="pure-menu-link pure-menu-heading">Yahoo</a> -->
                                     <ul class="pure-menu-list">
                                         <li class="pure-menu-item"><span class="pure-menu-link" title="Garden size">
                                             <i class="fa fa-leaf"></i> 169m2 
@@ -180,7 +187,7 @@
                                         </span></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </h3>
                         </div>
                         <!-- <form class="pure-u-1 pure-u-md-1-2 hide-lt-md context-book pure-form right">
                             <fieldset>
@@ -273,10 +280,10 @@
                                 <div class="flex-view ratio-3-4 color-1 shadow">
                                     <div class="scroll">
                                     <div class="pad-1">
-                                        <p>Villa Irma is a stylish and charming retreat within one of Seminyak's most happening areas, Petitenget. Located a quick drive or a 10 minute walk from the beach, you are never too far from a number of top restaurants, beach clubs and spas. Some of Bali's trendiest nightspots are literally down the street, including Potato Head Beach Club and Kudeta. Known especially for its innovative dining scene, be sure to experience the culinary genius of Mamasan, Metis and La Lucciola during your stay in Bali.
+                                        <p class="dropcaps">Villa Irma is a stylish and charming retreat within one of Seminyak's most happening areas, Petitenget. Located a quick drive or a 10 minute walk from the beach, you are never too far from a number of top restaurants, beach clubs and spas. Some of Bali's trendiest nightspots are literally down the street, including Potato Head Beach Club and Kudeta. Known especially for its innovative dining scene, be sure to experience the culinary genius of Mamasan, Metis and La Lucciola during your stay in Bali.
                                         <p>Choosing Villa Irma as your holiday accommodation means you are given the option of a two or three bedroom home, depending on the size of your travel party. Two of the bedrooms are located side by side on the ground floor, opening up to views of the pool and garden. The first of these two room is styled with a bright splash of sky blue, a Buddha print and hanging lamps on the wall behind the double bed. Furnished with mirrored closet, writing desk, TV and air conditioning, this room also enjoys an en-suite bathroom with earth tone tiles and a shower alcove.
                                         <p>The second bedroom on the ground floor is almost identical to the first room, except with a vibrant wall of green framing the double bed instead of blue. Fully equipped with air conditioning, a TV, writing desk, closet space and en-suite bathroom, guests of these pool views rooms enjoy direct access to the adjacent living and dining structure, also on the ground floor. 
-                                        <p>The third bedroom is a second-story studio, accessible via its own private entrance separate from the rest of the villa. Equipped with its own living room, bedroom, kitchen and adjoining roof terrace, this studio space is the perfect option for those keen on a little extra alone time during their vacation. The bedroom here is also equipped with a double bed, air conditioning TV, en-suite bathroom and views out to the neighbouring rice fields. The home entertainment system in the studio's living room even boasts a 47" flat screen TV, iPod dockstation & Playstation console.
+                                        <p>The third bedroom is a second-story studio, accessible via its own private entrance separate from the rest of the villa. Equipped with its own living room, bedroom, kitchen and adjoining roof terrace, this studio space is the perfect option for those keen on a little extra alone time during their vacation. The bedroom here is also equipped with a double bed, air conditioning TV, en-suite bathroom and views out to the neighbouring rice fields. The home entertainment system in the studio's living room even boasts a 47" flat screen TV, iPod dockstation &amp; Playstation console.
                                         <p>Villa Irma is designed with the Balinese open concept in mind, with airy living and dining spaces that overlook the pool, as well as open air showers.The living area features a day bed complete with canopy curtains, a favourite spot to take a nap or lounge with a book and cocktail. This beautiful villa is decked in colours of blue and green, with patterns on the floor tiles simulating little air bubbles in an underwater mermaid's hideout. Guests won't forget they are in Bali, as there is plenty of traditional art that showcases the rich culture of the Island of the Gods. 
                                     </div>
                                     </div>
@@ -289,9 +296,13 @@
                             <h2>Maps</h2>
                             <div class="pad">
                                 <div class="flex-view ratio-3-4 shadow">
-                                    <div class="static-map"><div class="center info-bottom color-4"><div class="pad">
-                                        <a href="//maps.google.com/" target="_blank"><h4>Open map in new tab</h4></a>
-                                    </div></div></div>
+                                    <div class="static-map"><div class="center info-bottom color-4">
+                                    <a href="//maps.google.com/" target="_blank">
+                                        <div class="pad">
+                                            <h4>Open map in new tab</h4>
+                                        </div>
+                                    </a>
+                                    </div></div>
                                 </div>
                             </div>
                         </div>
